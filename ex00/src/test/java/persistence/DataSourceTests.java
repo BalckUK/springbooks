@@ -1,4 +1,4 @@
-package org.zerock.sample;
+package persistence;
 
 import static org.junit.Assert.fail;
 
