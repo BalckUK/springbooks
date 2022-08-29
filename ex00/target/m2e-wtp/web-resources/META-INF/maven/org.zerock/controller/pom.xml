@@ -15,6 +15,13 @@
 	</properties>
 	<dependencies>
 	
+		<!-- HikariCP DataBasc ConnectionPool  -->
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>2.7.4</version>
+		</dependency>
+	
 		<!-- spring test 설치 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
