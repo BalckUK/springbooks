@@ -4,7 +4,7 @@
 
 	<select id="getList" resultType="org.zerock.domain.BoardVO">
 		<![CDATA[
-			select * from tbl_board where bno > 0 order by regdate
+			select * from tbl_board where bno > 0 order by regdate desc
 		]]>
 	</select>
 
