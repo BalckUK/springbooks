@@ -1,5 +1,7 @@
 package org.zerock.domain;
 
+import java.util.Date;
+
 import lombok.Data;
 
 @Data
@@ -9,6 +11,6 @@ public class BoardVO {
 	private String title;
 	private String content;
 	private String writer;
-	private String regdate;
-	private String updateDate;
+	private Date regdate;
+	private Date updateDate;
 }
