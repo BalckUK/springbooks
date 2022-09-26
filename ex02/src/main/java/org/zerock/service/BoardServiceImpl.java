@@ -15,17 +15,14 @@ import lombok.extern.log4j.Log4j;
 @AllArgsConstructor
 public class BoardServiceImpl implements BoardService {
 
-//  첫번째 방식
 //	@Autowired
 //	private BoardMapper mapper;
 
-//  두번째 방식
 //	@Setter(onMethod_ = {@Autowired})
 //	private BoardMapper mapper;
 
 	private BoardMapper mapper;
 	
-	//등록
 	@Override
 	public void register(BoardVO board) {
 		
@@ -34,7 +31,7 @@ public class BoardServiceImpl implements BoardService {
 		mapper.insertSelectKey(board);
 	}
 
-	//특정 리스트
+
 	@Override
 	public BoardVO get(Long bno) {
 		
@@ -43,7 +40,6 @@ public class BoardServiceImpl implements BoardService {
 		return mapper.read(bno);
 	}
 
-	//수정
 	@Override
 	public boolean modify(BoardVO board) {
 		
@@ -52,7 +48,6 @@ public class BoardServiceImpl implements BoardService {
 		return mapper.update(board) == 1;
 	}
 
-	//삭제
 	@Override
 	public boolean remove(Long bno) {
 		
@@ -60,8 +55,7 @@ public class BoardServiceImpl implements BoardService {
 		
 		return mapper.delete(bno) == 1;
 	}
-
-	//전체 리스트
+	
 	@Override
 	public List<BoardVO> getList() {
 		
